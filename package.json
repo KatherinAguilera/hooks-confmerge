@@ -10,7 +10,6 @@
     "format": "prettier --write {*.jsx,src/**/*.{js,jsx}}",
     "lint": "eslint src/ --fix"
   },
-
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -26,6 +25,7 @@
     "prettier": "^2.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-paypal-button": "^4.1.1",
     "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
