@@ -40,7 +40,7 @@ const Payment = ({ history }) => {
   return (
     <div className="Payment">
       <div className="Payment-content">
-        <h3>Resument del pedido:</h3>
+        <h3>Resumen del pedido:</h3>
         {cart.map((item) => (
           <div className="Payment-item" key={item.title}>
             <div className="Payment-element">
