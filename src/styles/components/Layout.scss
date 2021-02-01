@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #3c484e;
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+}
+
+.Main {
+  // height: 100vh;
+  display: grid;
+  grid-gap: 1rem;
+  gap: 1rem;
+  grid-template-rows: -webkit-min-content auto -webkit-min-content;
+  grid-template-rows: min-content auto min-content;
+  margin: 0 auto;
+  min-height: 100vh;
+  @media (max-width: 640px) {
+    padding: 0 1rem;
+  }
+}

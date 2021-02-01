@@ -1,13 +1,15 @@
 import React, { useRef, useContext } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import AppContext from '../context/AppContext';
-import '../styles/components/Information.css';
+import '../styles/components/Information.scss';
 
 const Information = () => {
   const { state, addToBuyer } = useContext(AppContext);
   const form = useRef(null);
   const history = useHistory();
   const { cart } = state;
+  // const { register, handleSubmit, errors } = useForm() // initialise the hook
+  // const onSubmit = (data) => { console.log(data) } // callback when validation pass
 
   const handleSubmit = () => {
     const formData = new FormData(form.current);
@@ -34,15 +36,15 @@ const Information = () => {
         </div>
         <div className="Information-form">
           <form ref={form}>
-            <input type="text" placeholder="Nombre completo" name="name" />
-            <input type="text" placeholder="Correo Electronico" name="email" />
-            <input type="text" placeholder="Direccion" name="address" />
-            <input type="text" placeholder="Apto" name="apto" />
-            <input type="text" placeholder="Ciudad" name="city" />
-            <input type="text" placeholder="Pais" name="country" />
-            <input type="text" placeholder="Estado" name="state" />
-            <input type="text" placeholder="Codigo postal" name="cp" />
-            <input type="text" placeholder="Telefono" name="phone" />
+            <input type="text" placeholder="Nombre completo" name="name" required />
+            <input type="text" placeholder="Correo Electronico" name="email" required />
+            <input type="text" placeholder="Direccion" name="address" required />
+            <input type="text" placeholder="Apto" name="apto" required />
+            <input type="text" placeholder="Ciudad" name="city" required />
+            <input type="text" placeholder="Pais" name="country" required />
+            <input type="text" placeholder="Estado" name="state" required />
+            <input type="text" placeholder="Codigo postal" name="cp" required />
+            <input type="text" placeholder="Telefono" name="phone" required />
           </form>
         </div>
         <div className="Information-buttons">

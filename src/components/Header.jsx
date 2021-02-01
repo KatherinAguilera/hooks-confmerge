@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import AppContext from '../context/AppContext';
-import '../styles/components/Header.css'
+import '../styles/components/Header.scss'
 
 const Header = () => {
   const { state } = useContext(AppContext);
@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <div className="Header">
       <h1 className="Header-title">
-        <Link to="/">PlatziConf Merch</Link>
+        <Link to="/">Tech Conference Shop</Link>
       </h1>
       <div className="Header-checkout">
         <Link to="/checkout">

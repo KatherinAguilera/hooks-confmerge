@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import AppContext from '../context/AppContext';
 import { Helmet } from 'react-helmet';
+import AppContext from '../context/AppContext';
 
-import '../styles/components/Checkout.css';
+import '../styles/components/Checkout.scss';
+import NotProducts from '../components/NotProducts';
 
 const Checkout = () => {
   const { state, removeFromCart } = useContext(AppContext);
@@ -46,7 +47,7 @@ const Checkout = () => {
       </Helmet>
       <div className="Checkout">
         <div className="Checkout-content">
-          {cart.length > 0 ? <h3>Lista de pedidos:</h3> : <h3>Sin pedidos...</h3>}
+          {cart.length > 0 ? <h3>Lista de pedidos:</h3> : <NotProducts />}
           {cart.map((item) => (
             <div className="Checkout-item">
               <div className="Checkout-element">

@@ -4,6 +4,23 @@
   grid-row-gap: 1.5em;
   display: grid;
   margin: 0 0 4em 0;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+  &-head{
+    h2{
+      font-size: 1.25rem;
+      background: #ffc764;
+      padding: 5px 8px 5px 8px;
+      transition: .5s;
+      border-radius: 40% 0 / 20% 0;
+    }
+  }
+
 }
 .Information-buttons {
   display: flex;
@@ -15,6 +32,9 @@
 }
 .Information-back {
   margin: 10px 0 0 0;
+  a{
+    color: #ff577f;
+  }
 }
 .Information-item {
   display: flex;
@@ -72,20 +92,17 @@ input {
   margin: 10px 0 0 ;
 }
 .Information button {
-  box-shadow: inset 0px 1px 0px 0px #bee2f9;
-    background: linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
-    background-color: #63b8ee;
+    background-color: #ff577f;
     border-radius: 6px;
-    border: 1px solid #3866a3;
+    border: 1px solid #ff577f;
     display: inline-block;
     cursor: pointer;
-    color: #14396a;
+    color: #ffffff;
     font-family: Arial;
     font-size: 15px;
     font-weight: bold;
     padding: 6px 24px;
     text-decoration: none;
-    text-shadow: 0px 1px 0px #7cacde;
     width: 100%;
     display: block;
     outline: none;

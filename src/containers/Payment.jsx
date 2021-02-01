@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { PayPalButton } from 'react-paypal-button';
 import AppContext from '../context/AppContext';
-import '../styles/components/Payment.css';
+import '../styles/components/Payment.scss';
 
 const Payment = ({ history }) => {
   const { state, addNewOrder } = useContext(AppContext);
